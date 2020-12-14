@@ -1,0 +1,13 @@
+C:\Fontes_Marcelo\Git\web-api-sample\web-api-sample\web-api-sample.tests\bin\Debug\netcoreapp3.1\web-api-sample.tests.deps.json
+C:\Fontes_Marcelo\Git\web-api-sample\web-api-sample\web-api-sample.tests\bin\Debug\netcoreapp3.1\web-api-sample.tests.runtimeconfig.json
+C:\Fontes_Marcelo\Git\web-api-sample\web-api-sample\web-api-sample.tests\bin\Debug\netcoreapp3.1\web-api-sample.tests.runtimeconfig.dev.json
+C:\Fontes_Marcelo\Git\web-api-sample\web-api-sample\web-api-sample.tests\bin\Debug\netcoreapp3.1\web-api-sample.tests.dll
+C:\Fontes_Marcelo\Git\web-api-sample\web-api-sample\web-api-sample.tests\bin\Debug\netcoreapp3.1\web-api-sample.tests.pdb
+C:\Fontes_Marcelo\Git\web-api-sample\web-api-sample\web-api-sample.tests\obj\Debug\netcoreapp3.1\web-api-sample.tests.csprojAssemblyReference.cache
+C:\Fontes_Marcelo\Git\web-api-sample\web-api-sample\web-api-sample.tests\obj\Debug\netcoreapp3.1\web-api-sample.tests.AssemblyInfoInputs.cache
+C:\Fontes_Marcelo\Git\web-api-sample\web-api-sample\web-api-sample.tests\obj\Debug\netcoreapp3.1\web-api-sample.tests.AssemblyInfo.cs
+C:\Fontes_Marcelo\Git\web-api-sample\web-api-sample\web-api-sample.tests\obj\Debug\netcoreapp3.1\web-api-sample.tests.dll
+C:\Fontes_Marcelo\Git\web-api-sample\web-api-sample\web-api-sample.tests\obj\Debug\netcoreapp3.1\web-api-sample.tests.pdb
+C:\Fontes_Marcelo\Git\web-api-sample\web-api-sample\web-api-sample.tests\bin\Debug\netcoreapp3.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Fontes_Marcelo\Git\web-api-sample\web-api-sample\web-api-sample.tests\bin\Debug\netcoreapp3.1\xunit.runner.reporters.netcoreapp10.dll
+C:\Fontes_Marcelo\Git\web-api-sample\web-api-sample\web-api-sample.tests\bin\Debug\netcoreapp3.1\xunit.runner.utility.netcoreapp10.dll
