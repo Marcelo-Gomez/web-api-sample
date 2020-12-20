@@ -48,7 +48,7 @@ namespace web_api_sample.api.Business
         {
             bool result = false;
 
-            if (await _roleRepository.ExistsAsync(id))
+            if (id > 0 && await _roleRepository.ExistsAsync(id))
             {
                 await _roleRepository.DeleteAsync(id);
 
@@ -74,16 +74,19 @@ namespace web_api_sample.api.Business
 
             Role oldRole = await _roleRepository.GetByIdAsync(role.Id);
 
-            if (oldRole != null && oldRole.Name != role.Name)
+            if (oldRole != null)
             {
-                if (!await _roleRepository.NameExistsAsync(role.Name))
+                if (oldRole.Name != role.Name)
+                {
+                    if (!await _roleRepository.NameExistsAsync(role.Name))
+                    {
+                        result = true;
+                    }
+                }
+                else
                 {
                     result = true;
                 }
-            }
-            else
-            {
-                result = true;
             }
 
             return result;

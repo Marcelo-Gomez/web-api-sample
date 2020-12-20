@@ -80,7 +80,7 @@ namespace web_api_sample.api.Business
         {
             bool result = false;
 
-            if (await _userRepository.ExistsAsync(id))
+            if (id > 0 && await _userRepository.ExistsAsync(id))
             {
                 await _userRepository.DeleteUserRolesAsync(id);
 
@@ -139,16 +139,19 @@ namespace web_api_sample.api.Business
 
             User oldUser = await _userRepository.GetByIdAsync(user.Id);
 
-            if (oldUser != null && oldUser.Username != user.Username)
+            if (oldUser != null)
             {
-                if (!await _userRepository.UsernameExistsAsync(user.Username))
+                if (oldUser.Username != user.Username)
+                {
+                    if (!await _userRepository.UsernameExistsAsync(user.Username))
+                    {
+                        result = true;
+                    }
+                }
+                else
                 {
                     result = true;
                 }
-            }
-            else
-            {
-                result = true;
             }
 
             return result;

@@ -35,6 +35,10 @@ namespace web_api_sample.api.Controllers
         /// <response code="401">É necessário se autenticar para completar a requisição</response>
         /// <response code="500">Ocorreu uma exceção ao processar sua requisição</response>
         [HttpPost]
+        [ProducesResponseType(201)]
+        [ProducesResponseType(400)]
+        [ProducesResponseType(401)]
+        [ProducesResponseType(500)]
         public async Task<ActionResult> Post([FromBody] User user)
         {
             try
@@ -43,7 +47,7 @@ namespace web_api_sample.api.Controllers
                 {
                     UserDto userDto = _mapper.Map<UserDto>(user);
 
-                    return Ok(userDto);
+                    return CreatedAtAction(nameof(GetById), new { id = user.Id }, userDto);
                 }
 
                 return BadRequest();
@@ -66,6 +70,11 @@ namespace web_api_sample.api.Controllers
         /// <response code="404">Nenhum usuário foi encontrado</response>
         /// <response code="500">Ocorreu uma exceção ao processar sua requisição</response>
         [HttpPut("{id}")]
+        [ProducesResponseType(200)]
+        [ProducesResponseType(400)]
+        [ProducesResponseType(401)]
+        [ProducesResponseType(404)]
+        [ProducesResponseType(500)]
         public async Task<IActionResult> Put(int id, [FromBody] User user)
         {
             try
@@ -98,6 +107,10 @@ namespace web_api_sample.api.Controllers
         /// <response code="404">Nenhum usuário foi encontrado</response>
         /// <response code="500">Ocorreu uma exceção ao processar sua requisição</response>
         [HttpDelete("{id}")]
+        [ProducesResponseType(200)]
+        [ProducesResponseType(401)]
+        [ProducesResponseType(404)]
+        [ProducesResponseType(500)]
         public async Task<ActionResult> Delete(int id)
         {
             try
@@ -125,6 +138,10 @@ namespace web_api_sample.api.Controllers
         /// <response code="500">Ocorreu uma exceção ao processar sua requisição</response>
         [HttpGet]
         [Authorize(Roles = "Admin")]
+        [ProducesResponseType(200)]
+        [ProducesResponseType(401)]
+        [ProducesResponseType(404)]
+        [ProducesResponseType(500)]
         public async Task<ActionResult> GetAll()
         {
             try
@@ -156,6 +173,10 @@ namespace web_api_sample.api.Controllers
         /// <response code="404">O usuário requisitado não foi encontrado</response>
         /// <response code="500">Ocorreu uma exceção ao processar sua requisição</response>
         [HttpGet("{id}")]
+        [ProducesResponseType(200)]
+        [ProducesResponseType(401)]
+        [ProducesResponseType(404)]
+        [ProducesResponseType(500)]
         public async Task<ActionResult> GetById(int id)
         {
             try

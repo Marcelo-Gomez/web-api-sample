@@ -10,7 +10,6 @@ using Microsoft.OpenApi.Models;
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Reflection;
 using System.Text;
 using web_api_sample.api.Authentication;
 using web_api_sample.api.Business;
@@ -102,7 +101,7 @@ namespace web_api_sample.api
             {
                 x.SwaggerDoc("v1", new OpenApiInfo
                 {
-                    Title = "API - Demo",
+                    Title = "Web-Api-Sample",
                     Version = "v1",
                     Description = "Projeto de Demonstração",
                     Contact = new OpenApiContact
