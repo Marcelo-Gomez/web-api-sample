@@ -9,7 +9,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{3905356A
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "web-api-sample.api", "web-api-sample.api\web-api-sample.api.csproj", "{C1300AAB-D704-4A4E-88C2-8227E6A3D7F8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "web-api-sample.tests", "web-api-sample.tests\web-api-sample.tests.csproj", "{69F9C3B3-3237-4657-92F0-BC8651A3BE56}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "web-api-sample.tests", "web-api-sample.tests\web-api-sample.tests.csproj", "{69F9C3B3-3237-4657-92F0-BC8651A3BE56}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sql", "sql", "{3FDAFCE0-7729-46CC-B542-D0E606FC59D9}"
+	ProjectSection(SolutionItems) = preProject
+		GenerateDataBase.sql = GenerateDataBase.sql
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
