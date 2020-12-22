@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29728.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9213B9FB-7438-4089-BE47-87CB89D4A373}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{3905356A-45A2-41CD-9DBF-2CF7BBA3AE62}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "web-api-sample.api", "web-api-sample.api\web-api-sample.api.csproj", "{C1300AAB-D704-4A4E-88C2-8227E6A3D7F8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "web-api-sample.tests", "web-api-sample.tests\web-api-sample.tests.csproj", "{69F9C3B3-3237-4657-92F0-BC8651A3BE56}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sql", "sql", "{3FDAFCE0-7729-46CC-B542-D0E606FC59D9}"
+	ProjectSection(SolutionItems) = preProject
+		GenerateDataBase.sql = GenerateDataBase.sql
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C1300AAB-D704-4A4E-88C2-8227E6A3D7F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1300AAB-D704-4A4E-88C2-8227E6A3D7F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1300AAB-D704-4A4E-88C2-8227E6A3D7F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1300AAB-D704-4A4E-88C2-8227E6A3D7F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69F9C3B3-3237-4657-92F0-BC8651A3BE56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69F9C3B3-3237-4657-92F0-BC8651A3BE56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69F9C3B3-3237-4657-92F0-BC8651A3BE56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69F9C3B3-3237-4657-92F0-BC8651A3BE56}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C1300AAB-D704-4A4E-88C2-8227E6A3D7F8} = {9213B9FB-7438-4089-BE47-87CB89D4A373}
+		{69F9C3B3-3237-4657-92F0-BC8651A3BE56} = {3905356A-45A2-41CD-9DBF-2CF7BBA3AE62}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2FA41687-6653-4908-AC58-BAFC9F27742C}
+	EndGlobalSection
+EndGlobal

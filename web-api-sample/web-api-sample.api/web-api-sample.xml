@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>web-api-sample.api</name>
+    </assembly>
+    <members>
+        <member name="M:web_api_sample.api.Controllers.AuthenticationController.Login(System.String,System.String)">
+            <summary>
+            Cria o Token
+            </summary>
+            <param name="username">Nome do usuário</param>
+            <param name="password">Senha do usuário</param>
+            <response code="200">Token criado com sucesso</response>
+            <response code="401">Usuário ou senha estão incorretos</response>
+            <response code="500">Ocorreu uma exceção ao processar sua requisição</response>
+        </member>
+        <member name="M:web_api_sample.api.Controllers.RoleController.Post(web_api_sample.api.Models.Entities.Role)">
+            <summary>
+            Cria uma role
+            </summary>
+            <param name="role">Objeto da role</param>
+            <response code="201">Role criada com sucesso</response>
+            <response code="400">Ocorreu um erro de validação</response>
+            <response code="401">É necessário se autenticar para completar a requisição</response>
+            <response code="500">Ocorreu uma exceção ao processar sua requisição</response>
+        </member>
+        <member name="M:web_api_sample.api.Controllers.RoleController.Put(System.Int32,web_api_sample.api.Models.Entities.Role)">
+            <summary>
+            Atualiza uma role existente
+            </summary>
+            <param name="id">Id da role</param>
+            <param name="role">Objeto da role</param>
+            <response code="200">Role atualizada com sucesso</response>
+            <response code="400">Ocorreu um erro de validação</response>
+            <response code="401">É necessário se autenticar para completar a requisição</response>
+            <response code="404">Nenhuma role foi encontrada</response>
+            <response code="500">Ocorreu uma exceção ao processar sua requisição</response>
+        </member>
+        <member name="M:web_api_sample.api.Controllers.RoleController.Delete(System.Int32)">
+            <summary>
+            Deleta uma role existente
+            </summary>
+            <param name="id">Id da role</param>
+            <response code="200">Role deletada com sucesso</response>
+            <response code="401">É necessário se autenticar para completar a requisição</response>
+            <response code="404">Nenhuma role foi encontrada</response>
+            <response code="500">Ocorreu uma exceção ao processar sua requisição</response>
+        </member>
+        <member name="M:web_api_sample.api.Controllers.RoleController.GetAll">
+            <summary>
+            Consulta todas as roles existentes
+            </summary>
+            <response code="200">Roles consultadas com sucesso</response>
+            <response code="401">É necessário se autenticar para completar a requisição</response>
+            <response code="404">Nenhuma role foi encontrada</response>
+            <response code="500">Ocorreu uma exceção ao processar sua requisição</response>
+        </member>
+        <member name="M:web_api_sample.api.Controllers.RoleController.GetById(System.Int32)">
+            <summary>
+            Consulta uma role existente
+            </summary>
+            <param name="id">Id da role</param>
+            <response code="200">Role consultada com sucesso</response>
+            <response code="401">É necessário se autenticar para completar a requisição</response>
+            <response code="404">A role requisitada não foi encontrada</response>
+            <response code="500">Ocorreu uma exceção ao processar sua requisição</response>
+        </member>
+        <member name="M:web_api_sample.api.Controllers.UserController.Post(web_api_sample.api.Models.Entities.User)">
+            <summary>
+            Cria um usuário
+            </summary>
+            <param name="user">Objeto do usuário</param>
+            <response code="201">Usuário criado com sucesso</response>
+            <response code="400">Ocorreu um erro de validação</response>
+            <response code="401">É necessário se autenticar para completar a requisição</response>
+            <response code="500">Ocorreu uma exceção ao processar sua requisição</response>
+        </member>
+        <member name="M:web_api_sample.api.Controllers.UserController.Put(System.Int32,web_api_sample.api.Models.Entities.User)">
+            <summary>
+            Atualiza um usuário existente
+            </summary>
+            <param name="id">Id do usuário</param>
+            <param name="user">Objeto do usuário</param>
+            <response code="200">Usuário atualizado com sucesso</response>
+            <response code="400">Ocorreu um erro de validação</response>
+            <response code="401">É necessário se autenticar para completar a requisição</response>
+            <response code="404">Nenhum usuário foi encontrado</response>
+            <response code="500">Ocorreu uma exceção ao processar sua requisição</response>
+        </member>
+        <member name="M:web_api_sample.api.Controllers.UserController.Delete(System.Int32)">
+            <summary>
+            Deleta um usuário existente
+            </summary>
+            <param name="id">Id do usuário</param>
+            <response code="200">Usuário deletado com sucesso</response>
+            <response code="401">É necessário se autenticar para completar a requisição</response>
+            <response code="404">Nenhum usuário foi encontrado</response>
+            <response code="500">Ocorreu uma exceção ao processar sua requisição</response>
+        </member>
+        <member name="M:web_api_sample.api.Controllers.UserController.GetAll">
+            <summary>
+            Consulta todos os usuários existentes
+            </summary>
+            <response code="200">Usuários consultados com sucesso</response>
+            <response code="401">É necessário se autenticar para completar a requisição</response>
+            <response code="404">Nenhum usuário foi encontrado</response>
+            <response code="500">Ocorreu uma exceção ao processar sua requisição</response>
+        </member>
+        <member name="M:web_api_sample.api.Controllers.UserController.GetById(System.Int32)">
+            <summary>
+            Consulta um usuário existente
+            </summary>
+            <param name="id">Id do usuário</param>
+            <response code="200">Usuário consultado com sucesso</response>
+            <response code="401">É necessário se autenticar para completar a requisição</response>
+            <response code="404">O usuário requisitado não foi encontrado</response>
+            <response code="500">Ocorreu uma exceção ao processar sua requisição</response>
+        </member>
+    </members>
+</doc>
